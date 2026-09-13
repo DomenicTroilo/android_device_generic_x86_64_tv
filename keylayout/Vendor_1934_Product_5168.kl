@@ -1,0 +1,66 @@
+# Key layout for the Microsoft/HP eHome MCE infrared receiver (045e:006d).
+#
+# The Linux mceusb/RC6 stack reports several remote buttons using modern
+# media key codes that are absent from Android's Generic.kl.  Keep the
+# overrides scoped to this receiver so other keyboards and remotes retain
+# their standard Android mappings.
+
+# Navigation
+key 28    DPAD_CENTER
+key 103   DPAD_UP
+key 108   DPAD_DOWN
+key 105   DPAD_LEFT
+key 106   DPAD_RIGHT
+key 352   DPAD_CENTER
+key 174   BACK
+key 226   HOME              WAKE
+key 111   CLEAR
+
+# Power and audio
+key 356   POWER             WAKE
+key 142   POWER             WAKE
+key 113   VOLUME_MUTE
+key 114   VOLUME_DOWN
+key 115   VOLUME_UP
+
+# Media transport
+key 119   MEDIA_PAUSE
+key 128   MEDIA_STOP
+key 161   MEDIA_EJECT
+key 164   MEDIA_PLAY_PAUSE
+key 167   MEDIA_RECORD
+key 168   MEDIA_REWIND
+key 207   MEDIA_PLAY
+key 208   MEDIA_FAST_FORWARD
+key 407   MEDIA_NEXT
+key 412   MEDIA_PREVIOUS
+
+# Television functions
+key 358   INFO
+key 365   GUIDE
+key 366   DVR
+key 368   LANGUAGE_SWITCH
+key 370   CAPTIONS
+key 377   TV
+key 386   TV_INPUT
+key 392   MEDIA_AUDIO_TRACK
+key 398   PROG_RED
+key 399   PROG_GREEN
+key 400   PROG_YELLOW
+key 401   PROG_BLUE
+key 402   CHANNEL_UP
+key 403   CHANNEL_DOWN
+
+# MCE numeric key codes
+key 512   0
+key 513   1
+key 514   2
+key 515   3
+key 516   4
+key 517   5
+key 518   6
+key 519   7
+key 520   8
+key 521   9
+key 522   STAR
+key 523   POUND
