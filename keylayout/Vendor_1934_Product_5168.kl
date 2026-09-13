@@ -1,4 +1,4 @@
-# Key layout for the Microsoft/HP eHome MCE infrared receiver (045e:006d).
+# Key layout for the Microsoft/HP eHome MCE infrared receiver (1934:5168).
 #
 # The Linux mceusb/RC6 stack reports several remote buttons using modern
 # media key codes that are absent from Android's Generic.kl.  Keep the
