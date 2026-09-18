@@ -583,7 +583,7 @@ function init_hal_media()
 			if [ "$(getprop ro.hardware.gralloc)" != "minigbm" ]; then
 				set_property persist.ffmpeg-codec2.pixel_format RGBX_8888
 			else
-				set_property persist.ffmpeg-codec2.pixel_format YUV_420
+				set_property persist.ffmpeg-codec2.pixel_format RGB_565
 			fi
 			;;
 		*)
