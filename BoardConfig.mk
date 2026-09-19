@@ -153,6 +153,8 @@ BOARD_MESA3D_MESON_ARGS := -Dallow-kcmp=enabled -Dmesa-clc=system -Dprecomp-comp
 BUILD_EMULATOR_OPENGL := true
 
 BOARD_KERNEL_CMDLINE := $(if $(filter x86_64,$(TARGET_ARCH) $(TARGET_KERNEL_ARCH)),, vmalloc=192M)
+# Enable the Codec2 DRM-prime/DMABUF path consumed by init.sh.
+BOARD_KERNEL_CMDLINE += FFMPEG_CODEC2_DRM=1
 TARGET_KERNEL_DIFFCONFIG := $(LOCAL_COMMON_TREE)/selinux_diffconfig
 
 # Atom specific
@@ -252,4 +254,3 @@ BUILD_FINGERPRINT := google/fugu/fugu:8.0.0/OPR2.170623.027/4397545:user/release
 
 # Include GloDroid components
 include $(LOCAL_COMMON_TREE)/glodroid/BoardConfig_glodroid.mk
-
